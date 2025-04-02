@@ -1,3 +1,3 @@
 # 🎨 Color Picker
-
-Follow the instructions in the workshop to finish the assignment!
+Website URL:
+https://nikhilscolorpicker.netlify.app/
