@@ -2,7 +2,9 @@ import { useState } from 'react'
 // Write your Color component here
 const Color = ({ color, setSelectedColor, selectedColor }) => {
   return (
-    <div className={`${color} ${color === selectedColor ? 'selected' : ''}`} onClick={() => setSelectedColor(color)}>
+    <div 
+      className={`${color} ${color === selectedColor ? 'selected':''}`} 
+      onClick={() => setSelectedColor(color)}>
     </div>
   );
 };
@@ -15,9 +17,21 @@ const App = () => {
         <div className={selectedColor}>{selectedColor}</div>
       </div>
       <div id="colors-list">
-        <Color color="blue" setSelectedColor={setSelectedColor} selectedColor={selectedColor}/>
-        <Color color="green" setSelectedColor={setSelectedColor} selectedColor={selectedColor}/>
-        <Color color="orange" setSelectedColor={setSelectedColor} selectedColor={selectedColor}/>
+        <Color 
+          color="blue" 
+          setSelectedColor={setSelectedColor} 
+          selectedColor={selectedColor}
+        />
+        <Color 
+          color="green" 
+          setSelectedColor={setSelectedColor} 
+          selectedColor={selectedColor}
+        />
+        <Color 
+          color="orange" 
+          setSelectedColor={setSelectedColor} 
+          selectedColor={selectedColor}
+        />
       </div>
     </div>
   );
